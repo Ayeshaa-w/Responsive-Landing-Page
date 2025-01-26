@@ -9,9 +9,8 @@ body {
 h1, h3 {
   color: #bb9be0;
 }
-
-h2 {
-  color: #2e0202;
+h2{
+  color:#2e0202
 }
 
 p {
@@ -58,8 +57,6 @@ a {
   padding-top: 80px;
   background: #2e0202;
   color: white;
-  text-align: center;
-  height: 100vh; /* Full screen height */
 }
 
 .hero-title {
@@ -82,7 +79,6 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .snippets-container {
@@ -92,15 +88,11 @@ a {
   padding: 20px;
   border-radius: 10px;
   flex: 2;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-between;
 }
 
 .snippet {
   text-align: center;
   color: white;
-  flex: 1;
-  min-width: 200px; /* Ensure a minimum width */
 }
 
 .snippet img {
@@ -119,7 +111,6 @@ a {
   color: white;
   position: sticky;
   top: 100px;
-  min-width: 250px;
 }
 
 .note-box img {
@@ -148,22 +139,18 @@ button:hover {
 .services-section {
   padding: 50px 20px;
   text-align: center;
-  background: #4a201d;  /* Added a color */
-  color: #fff;
-  height: auto; /* Adjust height for content */
+  background: ;
+  color: #2e0202;
 }
 
 .service-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
 .service-card {
   text-align: center;
-  flex: 1 1 250px; /* Flexible width */
-  margin: 10px;
 }
 
 .service-card img {
@@ -186,7 +173,6 @@ button:hover {
   text-align: center;
   background: #c5afc9;
   color: white;
-  height: auto; /* Adjust height for content */
 }
 
 .products-section p {
@@ -199,7 +185,6 @@ button:hover {
   background: #805472;
   color: white;
   text-align: center;
-  height: auto; /* Adjust height for content */
 }
 
 /* Contact Section */
@@ -208,7 +193,6 @@ button:hover {
   background: #f2e6ee;
   color: #2e0202;
   text-align: center;
-  height: auto; /* Adjust height for content */
 }
 
 /* Footer */
@@ -218,78 +202,3 @@ footer {
   color: white;
   padding: 10px;
 }
-
-/* Responsive Styles for Mobile */
-@media screen and (max-width: 768px) {
-  .home-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .snippets-container {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .note-box {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .services-section,
-  .products-section,
-  .about-section,
-  .contact-section {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .service-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .service-card {
-    width: 100%;
-  }
-
-  .navbar {
-    flex-direction: column;
-    padding: 20px 10px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-title h1 {
-    font-size: 2em;
-  }
-
-  .hero-title .tagline {
-    font-size: 1em;
-  }
-
-  .service-card h3 {
-    font-size: 1.2em;
-  }
-
-  .service-card p {
-    font-size: 0.9em;
-  }
-
-  .note-box {
-    padding: 15px;
-  }
-
-  footer {
-    padding: 10px 0;
-  }
-}
-
