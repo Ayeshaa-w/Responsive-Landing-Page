@@ -82,6 +82,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .snippets-container {
@@ -91,11 +92,15 @@ a {
   padding: 20px;
   border-radius: 10px;
   flex: 2;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
 }
 
 .snippet {
   text-align: center;
   color: white;
+  flex: 1;
+  min-width: 200px; /* Ensure a minimum width */
 }
 
 .snippet img {
@@ -114,6 +119,7 @@ a {
   color: white;
   position: sticky;
   top: 100px;
+  min-width: 250px;
 }
 
 .note-box img {
@@ -144,17 +150,20 @@ button:hover {
   text-align: center;
   background: #4a201d;  /* Added a color */
   color: #fff;
-  height: 100vh; /* Full screen height */
+  height: auto; /* Adjust height for content */
 }
 
 .service-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
 .service-card {
   text-align: center;
+  flex: 1 1 250px; /* Flexible width */
+  margin: 10px;
 }
 
 .service-card img {
@@ -177,7 +186,7 @@ button:hover {
   text-align: center;
   background: #c5afc9;
   color: white;
-  height: 100vh; /* Full screen height */
+  height: auto; /* Adjust height for content */
 }
 
 .products-section p {
@@ -190,7 +199,7 @@ button:hover {
   background: #805472;
   color: white;
   text-align: center;
-  height: 100vh; /* Full screen height */
+  height: auto; /* Adjust height for content */
 }
 
 /* Contact Section */
@@ -199,7 +208,7 @@ button:hover {
   background: #f2e6ee;
   color: #2e0202;
   text-align: center;
-  height: 100vh; /* Full screen height */
+  height: auto; /* Adjust height for content */
 }
 
 /* Footer */
@@ -214,6 +223,7 @@ footer {
 @media screen and (max-width: 768px) {
   .home-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -282,3 +292,4 @@ footer {
     padding: 10px 0;
   }
 }
+
