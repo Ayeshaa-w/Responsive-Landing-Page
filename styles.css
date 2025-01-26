@@ -57,6 +57,8 @@ a {
   padding-top: 80px;
   background: #2e0202;
   color: white;
+  text-align: center;
+  height: 100vh;
 }
 
 .hero-title {
@@ -141,6 +143,7 @@ button:hover {
   text-align: center;
   background: ;
   color: #2e0202;
+  height:100vh;
 }
 
 .service-cards {
@@ -173,6 +176,7 @@ button:hover {
   text-align: center;
   background: #c5afc9;
   color: white;
+  height: 100vh;
 }
 
 .products-section p {
@@ -185,6 +189,7 @@ button:hover {
   background: #805472;
   color: white;
   text-align: center;
+  height: 100vh;
 }
 
 /* Contact Section */
@@ -193,6 +198,7 @@ button:hover {
   background: #f2e6ee;
   color: #2e0202;
   text-align: center;
+  height: 100vh;
 }
 
 /* Footer */
