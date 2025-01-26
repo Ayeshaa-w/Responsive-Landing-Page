@@ -9,8 +9,9 @@ body {
 h1, h3 {
   color: #bb9be0;
 }
-h2{
-  color:#2e0202
+
+h2 {
+  color: #2e0202;
 }
 
 p {
@@ -58,7 +59,7 @@ a {
   background: #2e0202;
   color: white;
   text-align: center;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
 }
 
 .hero-title {
@@ -67,7 +68,7 @@ a {
 }
 
 .hero-title h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
@@ -141,9 +142,9 @@ button:hover {
 .services-section {
   padding: 50px 20px;
   text-align: center;
-  background: ;
-  color: #2e0202;
-  height:100vh;
+  background: #4a201d;  /* Added a color */
+  color: #fff;
+  height: 100vh; /* Full screen height */
 }
 
 .service-cards {
@@ -176,11 +177,11 @@ button:hover {
   text-align: center;
   background: #c5afc9;
   color: white;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
 }
 
 .products-section p {
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 
 /* About Us Section */
@@ -189,7 +190,7 @@ button:hover {
   background: #805472;
   color: white;
   text-align: center;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
 }
 
 /* Contact Section */
@@ -198,7 +199,7 @@ button:hover {
   background: #f2e6ee;
   color: #2e0202;
   text-align: center;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
 }
 
 /* Footer */
@@ -207,4 +208,77 @@ footer {
   background: #4a1d3c;
   color: white;
   padding: 10px;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .snippets-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .note-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .services-section,
+  .products-section,
+  .about-section,
+  .contact-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 2em;
+  }
+
+  .hero-title .tagline {
+    font-size: 1em;
+  }
+
+  .service-card h3 {
+    font-size: 1.2em;
+  }
+
+  .service-card p {
+    font-size: 0.9em;
+  }
+
+  .note-box {
+    padding: 15px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
 }
