@@ -125,10 +125,9 @@ a {
 }
 
 .note-box img {
-  width: 50%; /* Reduce width to 50% of its container */
-  margin: 10px auto; /* Center the image */
-  display: block; /* Ensure proper centering */
-  border-radius: 10px; /* Retain rounded corners */
+   width: 150px;
+  height: 150px;
+  border-radius: 10px;
 }
 /* Button */
 button {
