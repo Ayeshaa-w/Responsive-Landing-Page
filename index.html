@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurlyGiggles - Curly Hair Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CurlyGiggles</div>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+ 
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="home-content">
+      <div class="hero-title">
+        <h1>Welcome to CurlyGiggles</h1>
+        <p class="tagline">Embrace the beauty of your curls with expert care and premium products!</p>
+      </div>
+     
+      <!-- Note from Team -->
+      <div class="note-box">
+        <h2>Note from the CurlyGiggles Team</h2>
+        <p>
+          Here is a song for u from our team. your curly hair hums: "waiting for u to like me again....wait for ur love"
+        </p>
+        <img src="images/team.jpeg" alt="CurlyGiggles Team">
+        <button class="play-button" onclick="playAudio()">🎵 Play Song</button>
+        <audio id="audio" src="song.mp3"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="images/service1.jpeg" alt="Curly Haircuts">
+        <h3>Custom Curly Haircuts</h3>
+        <p>Tailored haircuts for your unique curl pattern.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service2.jpeg" alt="Deep Conditioning">
+        <h3>Deep Conditioning</h3>
+        <p>Restore moisture and shine to your curls.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <p>Coming soon... Stay tuned for our exclusive curly hair product line!</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>Curly hair, when taken care of well with proper cuts and care, can shine through and be your unique piece of accessory to wear with confidence. CurlyGiggles is a curly hair studio designed for embracing natural curls. From services to premium products, we celebrate the beauty of your curls.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us at <strong>hello@curlygiggles.com</strong> or visit our nearest studio!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CurlyGiggles. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
