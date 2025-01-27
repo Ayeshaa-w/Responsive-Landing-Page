@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: 'times new roman', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   color: #f7e6f2;
   background: #f7e6f2;
 }
@@ -9,8 +9,9 @@ body {
 h1, h3 {
   color: #bb9be0;
 }
-h2{
-  color:#2e0202
+
+h2 {
+  color: #2e0202;
 }
 
 p {
@@ -52,11 +53,38 @@ a {
   color: #8355a3;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-links.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  font-size: 1.2em;
+}
+
 /* Hero Section */
 .hero-section {
   padding-top: 80px;
   background: #2e0202;
   color: white;
+  height: 100vh;
 }
 
 .hero-title {
@@ -139,8 +167,8 @@ button:hover {
 .services-section {
   padding: 50px 20px;
   text-align: center;
-  background: ;
   color: #2e0202;
+   height: 100vh;
 }
 
 .service-cards {
@@ -173,6 +201,7 @@ button:hover {
   text-align: center;
   background: #c5afc9;
   color: white;
+   height: 100vh;
 }
 
 .products-section p {
@@ -185,6 +214,7 @@ button:hover {
   background: #805472;
   color: white;
   text-align: center;
+   height: 100vh;
 }
 
 /* Contact Section */
@@ -193,6 +223,7 @@ button:hover {
   background: #f2e6ee;
   color: #2e0202;
   text-align: center;
+   height: 100vh;
 }
 
 /* Footer */
@@ -202,3 +233,41 @@ footer {
   color: white;
   padding: 10px;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .snippets-container {
+    flex-direction: column;
+  }
+
+  .note-box {
+    width: 100%;
+  }
+
+  /* Hide one snippet on small screens */
+  .snippets-container .snippet:nth-child(3) {
+    display: none;
+  }
+}
+
