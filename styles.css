@@ -126,7 +126,7 @@ a {
 
 .note-box img {
    width: 200px;
-  height: 350px;
+  height: 300px;
 margin: 10px auto;
   border-radius: 10px;
 }
@@ -173,9 +173,7 @@ button:hover {
   border-radius: 10px;
 }
 
-.cen {
-  text-align: center;
-}
+
 
 .service-card h3 {
   font-size: 1.5em;
