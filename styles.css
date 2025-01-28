@@ -193,13 +193,12 @@ a {
   text-align: center;
   color: white;
   margin: 10px auto;
- 
+ position:fixed;
   top: 100px;
 }
 
 .note-box img {
   width: 25%;
-  
   margin: 10px 0;
   border-radius: 10px;
 }
