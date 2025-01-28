@@ -193,7 +193,6 @@ a {
   text-align: center;
   color: white;
   margin: 10px auto;
- position:fixed;
   top: 100px;
 }
 
@@ -210,6 +209,11 @@ a {
   background: #c5afc9;
   color: #2e0202;
   height: 100vh;
+}
+.service-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 /* Products Section */
@@ -278,6 +282,14 @@ flex-direction: column;
   .nav-links.active {
     display: flex;
   }
+ .service-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-card {
+    max-width: 90%;
+  } 
   
 }
 
