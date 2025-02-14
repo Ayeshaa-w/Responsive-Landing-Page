@@ -19,5 +19,4 @@ A modern and fully responsive **landing page** for *CurlyGiggles - Curly Hair St
 ### **Contribute & Explore:**  
 Feel free to explore, fork, and contribute to enhance the project! 🚀  
 
-🔗 **Live Demo:** [Add your link]  
-🔗 **GitHub Repository:** [Add your link]  
+🔗 **Live Demo:** https://ayeshaa-w.github.io/Responsive-Landing-Page/
